@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  position: relative;
+  background: linear-gradient(#f9e79f, #ffffff);
+  min-height: 100vh;
+  padding: 16px;
+  /* 为底部 TabBar 留出空间，调整为你实际 TabBar 高度（如 56px、64px 等） */
+  padding-bottom: 56px;
+}
+.bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 56px; /* 与上面 padding-bottom 保持一致 */
+  z-index: 20;
+  background: var(--adm-background-color, #fff);
+}

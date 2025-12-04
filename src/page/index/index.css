@@ -1,0 +1,120 @@
+/* Empty */
+.empty {
+  padding: 64px 0;
+}
+.empty-icon {
+  color: var(--adm-color-light);
+  font-size: 68px;
+}
+
+/* 数据列表容器 */
+/* .data-list {
+  padding: 8px;
+} */
+
+/* 每日卡片 */
+.day-item {
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* 头部 */
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.day-date {
+  font-weight: 600;
+}
+.day-week {
+  color: #888;
+  font-size: 12px;
+}
+.day-right {
+  text-align: right;
+  font-size: 14px;
+}
+.income-text {
+  color: #00b578;
+}
+.expense-text {
+  color: #ff4d4f;
+}
+
+/* 账单列表 */
+.bills {
+  margin-top: 4px;
+}
+.bill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+.bills .bill + .bill {
+  border-top: 1px solid #f0f0f0;
+}
+.bill-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bill-icon {
+  width: 28px;
+  text-align: center;
+}
+.bill-meta .bill-category {
+  font-size: 14px;
+}
+.bill-meta .bill-type {
+  color: #888;
+  font-size: 12px;
+}
+
+/* 金额显示 */
+.amount {
+  font-weight: 600;
+}
+.amount.income {
+  color: #00b578;
+}
+.amount.expense {
+  color: #ff4d4f;
+}
+
+/* 卡片 (Card) */
+.card {
+  padding: 12px;
+  background: #f7de7d;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+.toggle-switch {
+  /* 将 antd-mobile Switch 的 CSS 变量放在类上，使样式从样式表生效 */
+  --checked-color: #00b578;
+  --height: 36px;
+  --width: 60px;
+}
+.card-body .card-total {
+  margin: 8px 0 0 0;
+}
+.card-sub {
+  margin: 4px 0 0 0;
+  color: #666;
+  font-size: 14px;
+}

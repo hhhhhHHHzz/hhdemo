@@ -1,0 +1,123 @@
+/* 全局基础 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
+}
+
+/* 页面容器 */
+.bookkeeping-page {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
+/* 3. 收支类型切换 */
+.type-switch {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.type-option {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  color: #8b7338;
+  padding: 6px 12px;
+  border-radius: 16px;
+}
+
+.am-radio-checked .am-radio-inner {
+  background-color: #4096ff;
+  border-color: #4096ff;
+}
+
+/* 4. 分类选择 */
+.category-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #8b7338;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.category-btn.active {
+  background-color: #ffe898;
+  font-weight: 500;
+}
+
+/* 5. 金额区域 */
+.amount-area {
+  background-color: #ffeeb0;
+  border-radius: 12px;
+  padding: 20px 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.currency-sign {
+  font-size: 28px;
+  color: #8b7338;
+  margin-right: 8px;
+}
+
+.amount-text {
+  font-size: 28px;
+  color: #8b7338;
+  flex: 1;
+  --placeholder-color: #c8b686;
+}
+
+/* 6. 备注输入框 */
+.remark-input {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #8b7338;
+  --placeholder-color: #c8b686;
+}
+
+/* 7. 再记一笔按钮 */
+.re-record-btn {
+  background-color: #ffeeb0;
+  border-radius: 12px;
+  padding: 12px 0;
+  text-align: center;
+  color: #8b7338;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* ===== 你的NumberKeyboard样式（适配淡黄色主题） ===== */
+.custom-keyboard {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  --am-number-keyboard-background: #ffeeb0; /* 匹配主题的浅黄 */
+  --am-number-keyboard-key-background: #fff; /* 白色按键 */
+  --am-number-keyboard-key-color: #8b7338; /* 文字色匹配 */
+  --am-number-keyboard-key-active-background: #ffe898; /* 按下态匹配主题 */
+  --am-number-keyboard-confirm-color: #fff;
+  --am-number-keyboard-confirm-background: #4096ff; /* 确认键蓝色（匹配示例） */
+  --am-number-keyboard-delete-color: #8b7338;
+  border-radius: 16px 16px 0 0; /* 顶部圆角，协调 */
+  box-shadow: 0 -2px 8px rgba(139, 115, 56, 0.1); /* 轻微阴影，不突兀 */
+}
